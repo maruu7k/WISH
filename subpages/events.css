@@ -1,0 +1,284 @@
+/* ************************ Variables declared ************************* */
+:root {
+  /* font family */
+  --heading: "Montserrat", sans-serif;
+  --description: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #e7e6cf;
+}
+h1 {
+  font-family: var(--heading);
+  font-size: 32px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 26px;
+  font-family: var(--heading);
+}
+h3 {
+  font-size: 14px;
+  font-family: var(--description);
+}
+
+p {
+  font-family: var(--description);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+span.wish-title {
+  font-style: italic;
+}
+
+/* header styles  */
+.headerbox {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(168, 194, 86, 0.32);
+}
+
+.header {
+  background: #e7e6cf;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 95px;
+  bottom: 10px;
+
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  z-index: 0;
+}
+.logo img {
+  padding-left: 20px;
+  width: 50%;
+  /* background-color: rgba(168, 194, 86, 0.32); */
+}
+
+.wrapper {
+  position: relative;
+}
+
+body .header .logo {
+  flex: 1;
+}
+.navigation {
+  display: flex;
+  flex: 2;
+
+  /* background: rgba(168, 194, 86, 0.32); */
+}
+
+.nav-link,
+.nav-link-last {
+  margin: 0 5px; /* Adjust the margin to add spacing between nav items */
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: normal; */
+}
+
+.nav-link-last {
+  margin-left: 15px;
+  padding-right: 50px;
+}
+
+.nav-link,
+.nav-link-last {
+  text-decoration: none;
+  color: #000000; /* Set the color of the navigation links */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* css for event details */
+
+div.event-image img {
+  width: 25%;
+  margin-left: 37.75%;
+  margin-top: 1.5rem;
+}
+
+div.upcoming-event-image img {
+  width: 27%;
+  margin-left: 37%;
+  margin-top: 1.5rem;
+}
+
+.details-container {
+  background: rgba(168, 194, 86, 0.32);
+  width: 72%;
+  /* width: 1088px;
+      height: 278px; */
+  margin-left: 11rem;
+  margin-bottom: 2rem;
+}
+.details-container h1 {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.details-container span.wish-title {
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.details-container p {
+  text-align: left;
+  margin: auto;
+  font-size: 16px; /* confirm text size ,make it consistent for all pages */
+  width: 87%;
+  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  padding: auto;
+  text-align: justify;
+}
+
+span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* footer styles */
+
+footer {
+  background: #e7e6cf;
+  margin-top: 2rem;
+  text-align: center;
+  /* height: 200px; */
+}
+
+.footer-container,
+.footerbox {
+  background-color: rgba(168, 194, 86, 0.32);
+  height: 235px;
+}
+
+/* Center-align social media icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons img.facebooklogo,
+img.instalogo,
+img.youtubelogo {
+  padding-top: 2%;
+  width: 5%;
+  height: 5%; /* Adjust the size as needed */
+  margin: 0 0px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.social-icons img.facebooklogo {
+  margin-left: -30px;
+}
+.social-iconsimg.youtubelogo {
+  margin-left: -13px;
+}
+
+.social-icons img.twitterlogo {
+  padding-top: 1.9%;
+  width: 4.7%;
+  height: 4.7%; /* Adjust the size as needed */
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* Center-align navigation links */
+.nav-links {
+  margin-bottom: 20px;
+}
+
+.nav-links a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Add margin below the navigation links */
+.nav-links {
+  margin-bottom: 10px;
+}
+
+/* Add a border line */
+.border-line {
+  border-top: 1.5px solid rgb(72, 71, 71, 0.2);
+  margin: 5px 50px;
+  margin-top: 40px;
+}
+
+/* Copyrights, logo, and privacy links */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 0px 50px;
+}
+
+.footer-bottom p,
+.privacy-terms a {
+  font-size: 13px;
+  color: black;
+  font-family: var(--description);
+  font-weight: bold;
+}
+
+.footer-bottom p {
+  margin-left: 3%;
+  margin-top: -20px;
+}
+/* Adjust the styling of privacy and terms links */
+.privacy-terms a {
+  /* margin-left: 5%; 10px */
+  /* margin-right: 3%; */
+  text-decoration: none;
+}
+div.privacy-terms {
+  margin-top: -30px;
+}
+.privacy-terms a:first-child {
+  margin-left: -60%;
+  margin-right: 7%;
+}
+/* .privacy-terms a:last-child {
+      margin-right: 50%;
+    } */
+.footer-logo {
+  width: 20%;
+  margin-left: -4%;
+  margin-top: -5px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/blogs.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Partnering for Progress with Local Schools</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <!-- Our story section -->
+        <div class="flex-header">
+          <div class="blog-image">
+            <img src="/Images/community 3.png" alt="Blog image" />
+          </div>
+          <h1 class="event-title">
+            Partnering for Progress with Local Schools
+          </h1>
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <p>
+              <br />
+              <br />
+              The collaboration between 'Tend to Wish' and local schools is a
+              testament to the power of community partnerships in driving
+              positive change. Together, we are breaking down barriers and
+              creating pathways for quality education in underserved
+              communities.
+
+              <br />
+              <br />Through strategic partnerships, we work hand in hand with
+              schools to identify the unique needs of their students. From
+              providing educational resources to organizing supplemental
+              learning experiences, our collective efforts aim to narrow the
+              educational gap and create a level playing field for all children.
+
+              <br />
+              <br />The impact of this collaboration extends beyond the
+              classroom. It fosters a sense of belonging and empowerment among
+              students, instilling in them the belief that their education
+              matters. Additionally, it strengthens the ties between schools,
+              parents, and the broader community, creating a support network
+              that is essential for a child's success.
+
+              <br />
+              <br />By partnering with local schools, we are not only addressing
+              immediate needs but also sowing the seeds for long-term,
+              sustainable progress. Together, we are building a foundation of
+              education, opportunity, and hope for the children who need it
+              most.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

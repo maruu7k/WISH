@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/events.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Family Fun Extravaganza</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <div id="event-details-container">
+        <div class="event-image">
+          <img src="/Images/fundraising2.png" alt="Event image" />
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <h1 class="event-title">Family Fun Extravaganza</h1>
+            <p>
+              Our Family Fun Extravaganza was a jubilant day of joy, laughter,
+              and shared purpose, made possible by your enthusiastic
+              participation. On [Insert Date], families gathered, bringing the
+              spirit of togetherness to life, as we embarked on a day dedicated
+              to creating unforgettable moments.
+
+              <br />
+              <br />
+              The venue, adorned with vibrant colors and echoing with the sounds
+              of laughter, became a lively playground where children's
+              imaginations ran wild and adults rediscovered the magic of play.
+              It was a testament to the belief that in the simple act of coming
+              together, we create an environment where children flourish.
+
+              <br />
+              <br />
+              As the sun beamed down, families engaged in a multitude of games,
+              from classic favorites to exciting challenges, fostering bonds and
+              creating memories that will last a lifetime. The air was filled
+              with the delightful aroma of treats, adding to the carnival-like
+              atmosphere.
+
+              <br />
+              <br />
+              Our Family Fun Extravaganza was not just a day of games; it was a
+              celebration of the power of family, community, and the shared
+              commitment to nurturing the potential of every child. Your
+              participation contributed to an atmosphere where children felt
+              valued, supported, and surrounded by the warmth of a caring
+              community.
+
+              <br />
+              <br />
+              The success of this day lies in the collective effort of every
+              family, volunteer, and supporter who joined hands to make it
+              memorable. With heartfelt thanks, we extend our appreciation for
+              turning a day of fun into an opportunity to create a positive
+              impact on young lives.
+
+              <br />
+              <br />
+              Together, through events like these, we're weaving a tapestry of
+              support and encouragement for children, ensuring they have the
+              foundation they need to reach for the stars. The spirit of the
+              Family Fun Extravaganza lives on, inspiring us to continue
+              creating moments that matter in the lives of those we aim to
+              uplift.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

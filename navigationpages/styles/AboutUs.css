@@ -1,0 +1,125 @@
+/* ************************ Variables declared ************************* */
+:root {
+  /* font family */
+  --heading: "Montserrat", sans-serif;
+  --description: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #e7e6cf;
+}
+h1 {
+  font-family: var(--heading);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: var(--description);
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: var(--description);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+span.wish-title {
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* css for our story */
+
+.OurStory-container {
+  background: rgba(168, 194, 86, 0.32);
+  width: 72%;
+
+  margin-left: 11rem;
+  margin-bottom: 2rem;
+}
+.OurStory-container h1 {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.OurStory-container span.wish-title {
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.OurStory-container p {
+  text-align: left;
+  margin: auto;
+  font-size: 16px;
+  width: 87%;
+  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  padding: auto;
+  text-align: justify;
+}
+
+/* css styles for our team */
+
+.meet-our-team {
+  text-align: center;
+  padding: 20px;
+  background: rgba(8, 127, 140, 0.32);
+  width: 72%;
+  margin-left: 14%;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+
+.team-member {
+  margin: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-info {
+  margin-top: 10px;
+}
+
+.position {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.introduction {
+  text-align: center;
+}
+
+div.team-member {
+  width: fit-content;
+}
+
+p.position {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+p.introduction {
+  margin-top: 10px;
+}

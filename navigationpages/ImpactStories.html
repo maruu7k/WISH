@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/navigationpages/styles/ImpactStories.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Impact Stories</title>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <!-- First set of 4 testimonials -->
+      <h1>Testimonials</h1>
+      <section class="testimonial-section">
+        <!-- Testimonial 1 -->
+        <div class="testimonial testimonial-1">
+          <img
+            class="Image-left"
+            src="/Images/testimonial1.png"
+            alt="Testimonial 1"
+          />
+          <div class="testimonial-content content-right">
+            <p>
+              "Daniel used to be hesitant about school, but since he got his
+              hands on these educational toys, he's become a voracious learner.
+              We're seeing a newfound love for learning that is truly
+              heartwarming."
+            </p>
+            <p class="quote">- David and Irriyah Parker, Proud Parents</p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial reversed">
+          <img
+            class="Image-right"
+            src="/Images/testimonial2.png"
+            alt="Testimonial 2"
+          />
+          <div class="testimonial-content content-left">
+            <p>
+              "Emma's self-assurance has soared since she started using the
+              educational toys provided by 'Wish'. Her problem-solving abilities
+              have improved significantly, and she now approaches challenges
+              with newfound confidence."
+            </p>
+            <p class="quote">- Ryan and Jennifer Davis, Delighted Parents</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <img
+            class="Image-left"
+            src="/Images/testimonial3.png"
+            alt="Testimonial 1"
+          />
+          <div class="testimonial-content content-right">
+            <p>
+              "Ayezal’s artistic abilities have flourished with the creative
+              toys he received through this initiative. Her artwork now reflects
+              a level of detail and imagination that astounds us. Thank you for
+              nurturing her talent!"
+            </p>
+            <p class="quote">- Ayesha and Arham, Grateful Parents</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial reversed">
+          <img
+            class="Image-right"
+            src="/Images/testimonial4.png"
+            alt="Testimonial 2"
+          />
+          <div class="testimonial-content content-left">
+            <p>
+              Ava's love for learning and exploration has been fostered, her
+              teachers have noticed increased engagement and a deeper
+              understanding of concepts. She now approaches each day with a
+              sense of wonder and a thirst for knowledge."
+            </p>
+            <p class="quote">- Ayesha and Arham, Grateful Parents</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Button to show more testimonials -->
+      <div class="show-more">
+        <p class="statement">Want to see more success stories?</p>
+        <button id="show-more-btn" onclick="showMoreTestimonials()">
+          Click Here
+        </button>
+      </div>
+
+      <!-- Second set of 3 testimonials (initially hidden) -->
+
+      <section class="testimonial-section hidden" id="second-testimonials">
+        <div class="testimonial">
+          <img
+            class="Image-left"
+            src="/Images/testimonial5.png"
+            alt="Testimonial 5"
+          />
+          <div class="testimonial-content content-right">
+            <p>
+              "Ethan's curiosity has been ignited by the diverse range of
+              educational toys he received through this initiative. He now
+              eagerly explores new concepts and is excited about learning. We're
+              grateful for this positive impact."
+            </p>
+            <p class="quote">Lisa and David Thompson, Thankful Parents</p>
+          </div>
+        </div>
+        <!-- Testimonial 6-->
+        <div class="testimonial reversed">
+          <img
+            class="Image-right"
+            src="/Images/testimonial6.png"
+            alt="Testimonial 6"
+          />
+          <div class="testimonial-content content-left">
+            <p>
+              "Liam's grades have seen a significant improvement since he
+              started using the educational toys. His confidence in the
+              classroom has skyrocketed, and he now actively participates in
+              lessons."
+            </p>
+            <p class="quote">- Xin Yee and Chan Zhiao, Proud Parents</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 7 -->
+        <div class="testimonial">
+          <img
+            class="Image-left"
+            src="/Images/testimonial7.png"
+            alt="Testimonial 7"
+          />
+          <div class="testimonial-content content-right">
+            <p>
+              "Mia's creativity has flourished with the artistic toys she
+              received through this initiative. Her creations are now filled
+              with imagination and attention to detail. We're amazed by her
+              artistic growth."
+            </p>
+            <p class="quote">- Sophia and Michael Adams, Thankful Parents</p>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        function showMoreTestimonials() {
+          const secondTestimonials = document.getElementById(
+            "second-testimonials"
+          );
+          const showMoreSection = document.querySelector(".show-more");
+
+          secondTestimonials.classList.remove("hidden");
+          showMoreSection.style.display = "none";
+        }
+      </script>
+    </main>
+    <!-- script for footer content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

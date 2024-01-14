@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Home Page</title>
+    <script src="/homepagescript.js"></script>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            class="slideimages"
+            src="Images/Carousell1.png"
+            alt="toy image"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            class="slideimages"
+            src="Images/carousel 2.png"
+            alt="toy image"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            class="slideimages"
+            src="Images/carousel 3.png"
+            alt="toy image"
+          />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- Mission statement section -->
+      <section class="mission">
+        <div class="mission-container">
+          <h1>Our Mission</h1>
+          <p>
+            At Wish, we believe in the power of play as a fundamental tool for
+            learning and growth. Our mission, embodied in our slogan "Tend to
+            Wish," is to bridge the educational gap in underserved communities
+            by providing educational toys to underprivileged children. Through
+            your support, we aim to unlock the potential within every child,
+            ensuring they have access to quality educational resources.
+          </p>
+        </div>
+      </section>
+
+      <!-- Donation section -->
+      <section id="donation-section">
+        <article class="donate-toys">
+          <div class="content">
+            <h2>Donate Toys</h2>
+            <p class="quote">“Unlock a World of Learning Through Play”</p>
+            <p class="description">
+              By donating educational toys, you're providing children in need
+              with the tools they require to learn, grow, and explore the world
+              around them. Your generosity not only sparks imagination but also
+              fosters crucial cognitive development. Join us in making a
+              tangible difference in the lives of underprivileged children.
+              Every toy you contribute brings us one step closer to bridging the
+              educational gap.
+            </p>
+            <button class="donation">
+              <a href="/navigationpages/DonateToys.html">Donate Toys</a>
+            </button>
+          </div>
+        </article>
+        <article class="support-financially">
+          <div class="content">
+            <h2>Support Financially</h2>
+            <p class="quote">“Empower Change with Your Contribution”</p>
+            <p class="description">
+              Your financial support plays a vital role in our mission to
+              provide educational toys to underprivileged children. With your
+              contribution, we can reach more communities, touch more lives, and
+              make a lasting impact on children's educational journeys. Every
+              dollar brings us closer to creating a future where every child has
+              equal access to quality education.
+            </p>
+            <button class="donation donatemoney">
+              <a href="/navigationpages/DonateToys.html#donation-form">
+                Donate Money</a
+              >
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- welcome statement section -->
+      <section class="welcome-statement">
+        <div class="welcome-container">
+          <h1>Welcome to Wish</h1>
+          <p class="quote">
+            “Where Every Child's Potential is a Wish Come True”
+          </p>
+          <p class="description">
+            Welcome to Wish, where dreams take flight through the power of play!
+            We're on a mission to make a difference in the lives of
+            underprivileged children by providing them with educational toys
+            that inspire learning, creativity, and imagination. Join us in our
+            transformative initiative and become a part of a community dedicated
+            to nurturing the minds of our future leaders. Together, let's tend
+            to the wishes of children and pave the way for a brighter tomorrow.
+          </p>
+          <button class="learnMore">
+            <a href="/navigationpages/AboutUs.html"> Learn More</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- impact statistic section -->
+
+      <section id="impact-section">
+        <div class="impact-container">
+          <h1>Impact Statistics</h1>
+          <div class="stats">
+            <article class="stat first-stat">
+              <div class="content">
+                <img
+                  class="statimg1"
+                  src="/Images/New folder/download.jpg"
+                  alt="toys collected"
+                />
+                <p class="number numberstat1">97000</p>
+                <p class="description descriptionstat1">Toys Collected</p>
+              </div>
+            </article>
+            <article class="stat">
+              <div class="content">
+                <img
+                  class="statimg2"
+                  src="/Images/New folder/woman-holding-jar-with-money.jpg"
+                  alt="donation collected"
+                />
+                <p class="number numberstat2">$101,873</p>
+                <p class="description descriptionstat2">Donations Collected</p>
+              </div>
+            </article>
+            <article class="stat, last-stat">
+              <div class="content">
+                <img
+                  class="statimg3"
+                  src="/Images/New folder/Tips-for-Volunteering-With-Kids.jpg"
+                  alt="volunteers"
+                />
+                <p class="number numberstat3">549</p>
+                <p class="description descriptionstat3">Volunteers</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="bottom-image">
+        <img src="/Images/home below.png" alt="kids playing" />
+      </div>
+    </main>
+    <!-- script for footer content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

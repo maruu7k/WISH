@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blogs.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sarah Martinez</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <div id="event-details-container">
+        <!-- Our story section -->
+        <div class="flex-header">
+          <div class="blog-image">
+            <img src="/Images/community1.png" alt="Blog image" />
+          </div>
+          <h1 class="event-title">Local Hero, Sarah Martinez</h1>
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <p>
+              <br />
+              <br />
+              Sarah Martinez is more than a teacher—she's a beacon of
+              inspiration and a force for positive change in her community. With
+              an unwavering dedication to creating inclusive and empowering
+              learning environments, Sarah stands as a local hero, leaving an
+              indelible mark on the lives of her students.
+
+              <br />
+              <br />
+              As an educator, Sarah goes above and beyond, recognizing the
+              unique strengths and potential in each child. She creates a
+              classroom where every student feels valued, heard, and encouraged
+              to reach for the stars. Her innovative teaching methods and
+              genuine care for her students have transformed countless lives.
+
+              <br />
+              <br />
+              But Sarah's impact extends beyond the classroom walls. She's a
+              community advocate, tirelessly working to bridge gaps and create
+              opportunities for children from all backgrounds. Whether it's
+              organizing enrichment programs, securing resources, or mentoring
+              aspiring educators, Sarah is a true champion for educational
+              equity.
+
+              <br />
+              <br />Her story is one of passion, perseverance, and a deep belief
+              in the potential of every child. Through her tireless efforts,
+              Sarah inspires not only her students but also her colleagues,
+              parents, and the entire community. She exemplifies the spirit of a
+              local hero, leaving an enduring legacy of learning, growth, and
+              empowerment.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

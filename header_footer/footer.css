@@ -1,0 +1,117 @@
+/* footer styles */
+
+footer {
+  background: #e7e6cf;
+  margin-top: 2rem;
+  text-align: center;
+  /* height: 200px; */
+}
+
+.footer-container,
+.footerbox {
+  background-color: rgba(168, 194, 86, 0.32);
+  height: 235px;
+}
+
+/* Center-align social media icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons img.facebooklogo,
+img.instalogo,
+img.youtubelogo {
+  padding-top: 2%;
+  width: 5%;
+  height: 5%; /* Adjust the size as needed */
+  margin: 0 0px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.social-icons img.facebooklogo {
+  margin-left: -30px;
+}
+.social-iconsimg.youtubelogo {
+  margin-left: -13px;
+}
+
+.social-icons img.twitterlogo {
+  padding-top: 1.9%;
+  width: 4.7%;
+  height: 4.7%; /* Adjust the size as needed */
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* Center-align navigation links */
+.nav-links {
+  margin-bottom: 20px;
+}
+
+.nav-links a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Add margin below the navigation links */
+.nav-links {
+  margin-bottom: 10px;
+}
+
+/* Add a border line */
+.border-line {
+  border-top: 1.5px solid rgb(72, 71, 71, 0.2);
+  margin: 5px 50px;
+  margin-top: 40px;
+}
+
+/* Copyrights, logo, and privacy links */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 0px 50px;
+}
+
+.footer-bottom p,
+.privacy-terms a {
+  font-size: 13px;
+  color: black;
+  font-family: var(--description);
+  font-weight: bold;
+}
+
+.footer-bottom p {
+  margin-left: 3%;
+  margin-top: -20px;
+}
+/* Adjust the styling of privacy and terms links */
+.privacy-terms a {
+  /* margin-left: 5%; 10px */
+  /* margin-right: 3%; */
+  text-decoration: none;
+}
+div.privacy-terms {
+  margin-top: -30px;
+}
+.privacy-terms a:first-child {
+  margin-left: -60%;
+  margin-right: 7%;
+}
+/* .privacy-terms a:last-child {
+    margin-right: 50%;
+  } */
+.footer-logo {
+  width: 20%;
+  margin-left: -4%;
+  margin-top: -5px;
+}

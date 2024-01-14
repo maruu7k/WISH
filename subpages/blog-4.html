@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/blogs.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Art of Inquiry-Based Learning</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <div class="flex-header">
+          <div class="blog-image">
+            <img src="/Images/educational4.png" alt="Blog image" />
+          </div>
+          <h1 class="event-title">The Art of Inquiry-Based Learning</h1>
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <p>
+              <br />
+              <br />
+
+              Inquiry-based learning is more than an educational approach; it's
+              a philosophy that empowers children to become active, curious, and
+              engaged learners. 'The Art of Inquiry-Based Learning' immerses
+              readers in the transformative world of inquiry, shedding light on
+              how curiosity becomes a catalyst for deep understanding and
+              critical thinking.
+
+              <br />
+              <br />This blog illuminates the core principles of inquiry-based
+              learning, emphasizing the role of questions as seeds for
+              exploration. It provides a roadmap for educators and parents to
+              foster an environment where curiosity is not only welcomed but
+              encouraged. Through real-world examples and practical strategies,
+              the blog offers insights into guiding children towards their own
+              discoveries.
+
+              <br />
+              <br />Moreover, 'The Art of Inquiry-Based Learning' celebrates the
+              diverse ways in which children express their curiosity. From
+              scientific investigations that unveil the wonders of the natural
+              world to artistic inquiries that give voice to creativity, every
+              avenue of exploration is a testament to the power of curiosity in
+              shaping a well-rounded education.
+
+              <br />
+              <br />The blog also addresses the crucial role of educators and
+              parents as facilitators of inquiry. It provides guidance on how to
+              support and scaffold children's inquiries, ensuring that they have
+              the tools and resources to pursue their interests. By becoming
+              co-learners and co-inquirers, adults can inspire a lifelong love
+              for learning.
+
+              <br />
+              <br />Furthermore, this blog advocates for the integration of
+              inquiry-based learning across disciplines, recognizing that
+              curiosity knows no bounds. It invites educators to create learning
+              experiences that spark questions, provoke investigations, and lead
+              to a deeper understanding of the world.
+
+              <br />
+              <br />In essence, 'The Art of Inquiry-Based Learning' is an ode to
+              the boundless potential of questions in the pursuit of knowledge.
+              It's an invitation to embrace curiosity as a driving force for
+              learning, recognizing that every question holds the promise of
+              discovery and understanding.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

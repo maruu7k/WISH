@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/events.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Walk for Education</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <div class="upcoming-event-image">
+          <img src="/Images/upcoming event 2.png" alt="Event image" />
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <h1 class="event-title">Walk for Education</h1>
+            <p>
+              Lace up your sneakers and join us for a transformative community
+              walk dedicated to raising funds for educational toys. This event
+              is more than just a walk; it's a collective journey towards equal
+              access to quality education for underprivileged children. On
+              <span class="date"> 17th January 2024, </span> we invite you to
+              <span class="date">Square One Mall </span>to take purposeful steps
+              together, symbolizing progress and making a lasting impact on
+              young minds.
+
+              <br />
+              <br />
+              As the sun casts a warm glow, participants will embark on a scenic
+              route, surrounded by like-minded individuals who share a passion
+              for empowering children through education. Every stride you take
+              directly contributes to providing educational toys and bridging
+              the educational gap within underserved communities.
+
+              <br />
+              <br />
+              The "Walk for Education" is an occasion to celebrate unity,
+              commitment, and the transformative power of education. It's an
+              opportunity to connect with others who believe in making a
+              difference, turning your physical activity into meaningful
+              contributions for a cause that matters.
+
+              <br />
+              <br />
+              Why join the walk? By participating, you support educational
+              equality, foster community bonding, promote physical activity for
+              a cause, and create lasting memories of unity and purpose.
+              Register on our website, create a fundraising page, and spread the
+              word on social media to inspire others to join or support your
+              walk.
+
+              <br />
+              <br />
+              Your contribution supports providing educational toys, fostering
+              cognitive development and creativity, and making education
+              accessible to all children. Lace up, walk with purpose, and make a
+              difference in education. Together, let's stride towards a brighter
+              future for every child.
+
+              <br />
+              <br />
+              <span class="date">
+                Save the date - January 17th, 2024 at Square One Mall,
+                Mississauga and join us for a walk that impacts lives.
+              </span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

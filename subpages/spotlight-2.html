@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/blogs.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Empowering Minds through Volunteering</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <!-- Our story section -->
+        <div class="flex-header">
+          <div class="blog-image">
+            <img src="/Images/community2.png" alt="Blog image" />
+          </div>
+          <h1 class="event-title">Empowering Minds through Volunteering</h1>
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <p>
+              <br />
+              <br />
+              Volunteers are the heartbeat of 'Tend to Wish,' and at the
+              forefront of this dedicated team is a group of individuals who
+              believe in the power of giving back. Their collective efforts are
+              not just acts of service; they are acts of love and empowerment,
+              each contributing to a brighter future for underprivileged
+              children.
+
+              <br />
+              <br />From organizing fundraising events to sorting and
+              distributing educational toys, these volunteers play a vital role
+              in the success of the initiative. Their passion and dedication
+              shine through in every task they undertake, leaving a lasting
+              impact on the lives of the children they serve.
+
+              <br />
+              <br />What sets this group apart is their shared mission to make a
+              difference. Their commitment to equal access to quality education
+              is unwavering, and they embody the spirit of community and
+              collaboration. Together, they form a network of support that
+              reaches far beyond the physical boundaries of their volunteer
+              work.
+
+              <br />
+              <br />These individuals are more than volunteers; they are
+              advocates for change, ambassadors of hope, and champions for the
+              educational rights of every child. Through their selfless
+              contributions, they inspire others to join the cause and create a
+              ripple effect of positive transformation in the lives of
+              underserved children.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

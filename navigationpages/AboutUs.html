@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/navigationpages/styles/AboutUs.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>About Us</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <!-- Our story section -->
+      <section class="OurStory">
+        <div class="OurStory-container">
+          <h1>Our Story</h1>
+          <p>
+            The genesis of <span class="wish-title"> ‘Wish’ </span> was rooted
+            in a collective belief that every child, regardless of their
+            circumstances, should have the opportunity to experience the joys of
+            play intertwined with valuable learning experiences. This vision
+            emerged from the profound understanding that well-chosen educational
+            toys can be powerful tools in a child's development. <br />
+            <br />
+            The name <span class="wish-title"> ‘Wish’ </span>originates from our
+            guiding motto -
+            <span class="wish-title"> ‘Tend to Wish’. </span> This slogan
+            encapsulates our mission to nurture dreams and potential through
+            play. It embodies our dedication to creating opportunities for
+            children to learn, grow, and, most importantly, to dream. <br />
+            <br />
+            Motivated by this insight, a dedicated group of individuals came
+            together to form <span class="wish-title"> ‘Wish’. </span> Their
+            mission was clear: to provide educational toys to children who might
+            not have access to them otherwise. This initiative became a beacon
+            of hope, offering a gateway to learning and growth for countless
+            young minds. <br />
+            <br />
+            As the word spread about our mission, a community of supporters
+            rallied behind us. Some generously contributed financial resources
+            to procure more educational toys, while others volunteered their
+            time and expertise to ensure the toys reached the hands of deserving
+            children. <br />
+            <br />
+            Today, <span class="wish-title"> ‘Wish’ </span> stands as a
+            testament to the impact that can be achieved through collective
+            action. Each donated toy, every financial contribution, and the
+            invaluable hours invested by our dedicated volunteers have
+            collectively made a profound difference in the lives of many
+            children. <br />
+            <br />
+            Reflecting on this journey,
+            <span class="wish-title"> ‘Wish’ </span>remains resolute in its
+            commitment to fostering growth and learning through play. This
+            narrative is not just a reflection of our progress, but a solemn
+            pledge to the children we serve - affirming that their potential is
+            boundless, and we are here to support their journey towards a
+            brighter future.
+          </p>
+        </div>
+      </section>
+
+      <!-- meet out team section -->
+
+      <section class="meet-our-team">
+        <h1>Meet Our Team</h1>
+        <div class="team-container">
+          <!-- First Row -->
+          <div class="team-row">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+              <img src="/Images/khalid.png" alt="Team Member 1" />
+              <div class="member-info">
+                <h3>Khalid Sharif</h3>
+                <p class="position">Founder</p>
+                <p class="introduction">
+                  Khalid is the driving force behind
+                  <span class="wish-title"> ‘Wish’ </span>, a passionate
+                  advocate for equal educational opportunities. With a
+                  background in education, Khalid witnessed the transformative
+                  power of play in a child's development.
+                </p>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+              <img src="/Images/maryam.png" alt="Team Member 2" />
+              <div class="member-info">
+                <h3>Maryam Khalid</h3>
+                <p class="position">Outreach Coordinator</p>
+                <p class="introduction">
+                  Maryam is a dedicated advocate for children's education. With
+                  a background in community outreach, she is instrumental in
+                  ensuring that <span class="wish-title"> ‘Wish’ </span> reaches
+                  the children who need it most.
+                </p>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+
+            <div class="team-member">
+              <img src="/Images/nabeel 2.png" alt="Team Member 6" />
+              <div class="member-info">
+                <h3>Nabeel Abdullah</h3>
+                <p class="position">Communications Specialist</p>
+                <p class="introduction">
+                  Nabeel uses his communication skills to spread the message of
+                  <span class="wish-title"> ‘Wish’ </span> far and wide. His
+                  passion for storytelling helps us connect with supporters and
+                  inspire change.
+                </p>
+              </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member">
+              <img src="/Images/ishrat.png" alt="Team Member 3" />
+              <div class="member-info">
+                <h3>Ishrat Jehan</h3>
+                <p class="position">Toy Procurement Specialist</p>
+                <p class="introduction">
+                  Ishrat has a keen eye for selecting educational toys that are
+                  both engaging and enriching for children. Her expertise
+                  ensures that every toy donated to
+                  <span class="wish-title"> ‘Wish’ </span> makes a meaningful
+                  impact.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="team-row">
+            <!-- Team Member 5 -->
+
+            <div class="team-member">
+              <img src="/Images/hassan.png" alt="Team Member 8" />
+              <div class="member-info">
+                <h3>Hassan Khalid</h3>
+                <p class="position">Technical Manager</p>
+                <p class="introduction">
+                  Hassan is the tech-savvy mind behind the seamless operation of
+                  <span class="wish-title"> ‘Wish’. </span> His expertise in
+                  technology and operations keeps our initiative running
+                  smoothly.
+                </p>
+              </div>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div class="team-member">
+              <img src="/Images/sarah.png" alt="Team Member 4" />
+              <div class="member-info">
+                <h3>Sarah Bilal</h3>
+                <p class="position">Finance Manager</p>
+                <p class="introduction">
+                  Sarah has a background in finance and a passion for social
+                  impact, she ensures that every dollar contributed is maximized
+                  for the benefit of underprivileged children.
+                </p>
+              </div>
+            </div>
+
+            <!-- Team Member 7 -->
+            <div class="team-member">
+              <img src="/Images/hussnain.png" alt="Team Member 7" />
+              <div class="member-info">
+                <h3>Hussnain Khalid</h3>
+                <p class="position">Program Coordinator</p>
+                <p class="introduction">
+                  Hussnain oversees implementation of our educational toy
+                  distribution programs. His attention to detail and
+                  organizational skills ensure that toys reach the right
+                  children at the right time.
+                </p>
+              </div>
+            </div>
+
+            <!-- Team Member 8 -->
+
+            <div class="team-member">
+              <img src="/Images/sasha.png" alt="Team Member 5" />
+              <div class="member-info">
+                <h3>Sasha Aslam</h3>
+                <p class="position">Volunteer Coordinator</p>
+                <p class="introduction">
+                  Sasha is the heart of our volunteer team. Her warm and
+                  welcoming nature ensures that every volunteer feels valued and
+                  engaged in our mission to make a difference.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

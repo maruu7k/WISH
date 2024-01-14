@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/navigationpages/styles/signin.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <!--signup form section -->
+      <section id="login-signup-form">
+        <div class="box-container">
+          <h1>Sign Up</h1>
+          <form>
+            <div class="form-column">
+              <label for="Fname">First Name </label>
+              <input
+                type="text"
+                id="Fname"
+                name="Fname"
+                required
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form-column">
+              <label for="Lname">Last Name</label>
+              <input
+                type="text"
+                id="Lname"
+                name="Lname"
+                required
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="form-column">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-column">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Enter your password"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-column">
+              <label for="verify-password">Verify Password</label>
+              <input
+                type="password"
+                id="verify-password"
+                name="verify-password"
+                required
+                placeholder="Verify your password"
+              />
+            </div>
+
+            <button
+              class="sign-up"
+              type="submit"
+              id="submit-btn"
+              oninput="validateForm()"
+              disabled
+            >
+              Create account
+            </button>
+          </form>
+          <div class="login-options">
+            <div class="login-line-container">
+              <hr class="login-line line1" />
+              <p class="or-text">or Sign up using</p>
+              <hr class="login-line line2" />
+            </div>
+            <div class="social-icons-form">
+              <a href="https://www.facebook.com/login.php/"
+                ><img src="/Images/loginfacebok.svg" alt="Facebook"
+              /></a>
+              <a href="https://www.linkedin.com/login"
+                ><img src="/Images/linkedinlogo.svg" alt="Linked In"
+              /></a>
+              <a href="  https://twitter.com/login"
+                ><img src="/Images/logintweet.svg" alt="Twitter"
+              /></a>
+              <a href="https://www.instagram.com/?hl=en"
+                ><img src="/Images/logininst.svg" alt="Instagram"
+              /></a>
+            </div>
+            <p class="signup-text">Already have an account?</p>
+            <a class="signup-link" href="signin.html">Sign in</a>
+          </div>
+        </div>
+      </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var form = document.querySelector("form");
+          var submitBtn = document.getElementById("submit-btn");
+
+          submitBtn.disabled = true;
+
+          // Clear form fields on page load
+          form.reset();
+
+          // Add an event listener to the form for input changes
+          form.addEventListener("input", function () {
+            // Get the values of all input fields
+            var fnameValue = document.getElementById("Fname").value;
+            var lnameValue = document.getElementById("Lname").value;
+            var emailValue = document.getElementById("email").value;
+            var passwordValue = document.getElementById("password").value;
+            var verifyPasswordValue =
+              document.getElementById("verify-password").value;
+
+            // Check if all fields are filled
+            var allFieldsFilled =
+              fnameValue &&
+              lnameValue &&
+              emailValue &&
+              passwordValue &&
+              verifyPasswordValue;
+
+            // Enable the submit button if all fields are filled
+            submitBtn.disabled = !allFieldsFilled;
+
+            // Check if Password and Verify Password match
+            var passwordMatch = passwordValue === verifyPasswordValue;
+
+            // Check if Password meets the minimum character requirement
+            var passwordLengthValid = passwordValue.length >= 6;
+
+            // Highlight the fields if they don't match or if the password length is invalid
+            var passwordField = document.getElementById("password");
+            var verifyPasswordField =
+              document.getElementById("verify-password");
+
+            if (!passwordMatch || !passwordLengthValid) {
+              passwordField.style.border = "1px solid red";
+              verifyPasswordField.style.border = "1px solid red";
+            } else {
+              // Reset the border if they match and the password length is valid
+              passwordField.style.border = "1px solid #ccc";
+              verifyPasswordField.style.border = "1px solid #ccc";
+            }
+          });
+
+          // Add an event listener to the form for submission
+          form.addEventListener("submit", function (event) {
+            // Check if the passwords match and meet the minimum character requirement
+            if (
+              document.getElementById("password").value !==
+                document.getElementById("verify-password").value ||
+              document.getElementById("password").value.length < 6
+            ) {
+              alert(
+                "Password must be at least 6 characters long, and Password and Verify Password must match!"
+              );
+              // Redirect to the sign-in page
+              window.location.href = "signin.html";
+            }
+          });
+        });
+      </script>
+    </main>
+    <!-- script for footer content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

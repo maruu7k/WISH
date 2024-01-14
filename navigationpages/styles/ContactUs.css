@@ -1,0 +1,129 @@
+/* ************************ Variables declared ************************* */
+:root {
+  /* font family */
+  --heading: "Montserrat", sans-serif;
+  --description: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #e7e6cf;
+}
+h1 {
+  font-family: var(--heading);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+
+p {
+  font-family: var(--description);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+span.wish-title {
+  font-style: italic;
+}
+p.quote {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+/* contact details */
+
+/* donation form */
+img.contact-details {
+  margin: 1.5rem 0 0rem 32%;
+  width: 35%;
+}
+
+#contact-form .contact-container {
+  background: rgba(168, 194, 86, 0.32);
+  margin-left: 22%;
+  width: 55%;
+  height: auto;
+}
+
+#contact-form h1 {
+  text-align: center;
+  font-size: 26px;
+  padding-top: 2.5rem;
+  padding-left: 5%;
+  margin-bottom: 2rem;
+}
+
+#contact-form form {
+  padding: 1.5% 5%;
+}
+
+#contact-form .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-form .form-column {
+  width: 40%;
+}
+
+#contact-form label {
+  font-size: 15px;
+  font-family: var(--description);
+  margin-left: 0.5px;
+  font-weight: bold;
+}
+
+#contact-form input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  background: rgba(255, 251, 251, 0.48);
+}
+
+#contact-form button {
+  margin-top: 2rem;
+  margin-left: 37.5%;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+
+  background-color: rgba(228, 63, 111);
+  height: 2.9rem;
+  width: 25%;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+
+  border: none;
+}
+
+#contact-form button:hover {
+  cursor: pointer;
+}
+
+p.subheading {
+  font-style: italic;
+  font-family: var(--description);
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#contact-form .form-column textarea {
+  width: 208%;
+  height: 200px;
+  margin-top: 10px;
+  padding: 8px;
+
+  font-size: 14px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  background: rgba(255, 251, 251, 0.48);
+}

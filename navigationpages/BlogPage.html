@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/navigationpages/styles/BlogPage.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <!-- Educational Insights section -->
+      <!-- ***************************** Educational Insights Section *********************************** -->
+
+      <section id="spotlight">
+        <h1>Educational Insights</h1>
+        <div class="flex-content educational-insight-top">
+          <!-- ***************************** Blog 1  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="The Power of Play-Based Learning"
+                src="/Images/educational1.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">The Power of Play-Based Learning</p>
+
+              <p class="description">
+                Explore how play-based learning fosters creativity,
+                problem-solving, and cognitive development in children.
+                Discover...
+              </p>
+              <button class="readMore" data-file="/subpages/blog-1.html">
+                Read More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** Blog  2  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="Unlocking Literacy: Strategies for Early Readers"
+                src="/Images/educational2.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">
+                Unlocking Literacy: Strategies for Early Readers
+              </p>
+              <p class="description">
+                Dive into effective techniques for supporting early literacy
+                skills in young learners. Learn how to create a literacy...
+              </p>
+              <button class="readMore" data-file="/subpages/blog-2.html">
+                Read More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** Blog  3  *********************************** -->
+          <article class="spotlight-item last-item">
+            <div class="image-container">
+              <img
+                alt="STEM Education: Inspiring the Next Generation of Innovators"
+                src="/Images/educational3.png"
+              />
+            </div>
+
+            <div class="content">
+              <p class="main-header">
+                STEM Education: Inspiring the Next Generation of Innovators
+              </p>
+              <p class="description">
+                Delve into the world of STEM (Science, Technology, Engineering,
+                and Mathematics) education and its impact...
+              </p>
+              <button class="readMore" data-file="/subpages/blog-3.html">
+                Read More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="flex-content">
+          <!-- ***************************** Blog  4  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="The Art of Inquiry-Based Learning"
+                src="/Images/educational4.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">The Art of Inquiry-Based Learning</p>
+
+              <p class="description">
+                Learn about the benefits of inquiry-based learning in promoting
+                curiosity and critical thinking. Explore practical examples
+                and...
+              </p>
+              <button class="readMore" data-file="/subpages/blog-4.html">
+                Read More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** Blog 5 *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="Fostering a Growth Mindset in Children"
+                src="/Images/educational5.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">Fostering a Growth Mindset in Children</p>
+              <p class="description">
+                Understand the concept of a growth mindset and its significance
+                in academic and personal development. Discover...
+              </p>
+              <button class="readMore" data-file="/subpages/blog-5.html">
+                Read More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** Blog 6  *********************************** -->
+          <article class="spotlight-item last-item">
+            <div class="image-container">
+              <img
+                alt=" The Role of Parental Involvement in Education"
+                src="/Images/educational6.png"
+              />
+            </div>
+
+            <div class="content">
+              <p class="main-header">
+                The Role of Parental Involvement in Education
+              </p>
+              <p class="description">
+                Explore the impact of parental engagement on a child's
+                educational journey. Gain insights into effective ways...
+              </p>
+              <button class="readMore" data-file="/subpages/blog-6.html">
+                Read More
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- community spotlight section -->
+      <section id="spotlight">
+        <h1>Community Spotlights</h1>
+        <div class="flex-content community-spotlight">
+          <!-- ***************************** community spotlight 1  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt=" Local Hero & Community Advocate, Sarah Martinez"
+                src="/Images/community1.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header spotlight1">
+                Local Hero & Community Advocate, Sarah Martinez
+              </p>
+
+              <p class="description">
+                A dedicated teacher and community advocate, who has been
+                instrumental in creating inclusive learning environments...
+              </p>
+              <button class="readMore" data-file="/subpages/spotlight-1.html">
+                Read More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** community spotlight   2  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="Empowering Minds through Volunteering"
+                src="/Images/community2.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">Empowering Minds through Volunteering</p>
+              <p class="description">
+                Meet the volunteers who dedicate their time and skills to the
+                'Tend to Wish' initiative. From organizing events to...
+              </p>
+              <button class="readMore" data-file="/subpages/spotlight-2.html">
+                Read More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** community spotlight   3  *********************************** -->
+          <article class="spotlight-item last-item">
+            <div class="image-container">
+              <img
+                alt=" Partnering for Progress with Local Schools"
+                src="/Images/community 3.png"
+              />
+            </div>
+
+            <div class="content">
+              <p class="main-header">
+                Partnering for Progress with Local Schools
+              </p>
+              <p class="description">
+                We're proud to highlight the collaborative efforts between 'Tend
+                to Wish' and local schools. Together, we're working hand in...
+              </p>
+              <button class="readMore" data-file="/subpages/spotlight-3.html">
+                Read More
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <script>
+        // Function to handle button clicks
+        function handleButtonClick(event) {
+          const button = event.target;
+          const filePath = button.getAttribute("data-file");
+
+          if (filePath) {
+            window.location.href = filePath;
+          }
+        }
+        const learnMoreButtons = document.querySelectorAll(".readMore");
+        learnMoreButtons.forEach((button) => {
+          button.addEventListener("click", handleButtonClick);
+        });
+      </script>
+    </main>
+    <!-- script for footer content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

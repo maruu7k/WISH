@@ -1,0 +1,15 @@
+<svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="15" height="28" fill="#F5F5F5"/>
+<g id="login page " clip-path="url(#clip0_191_2470)">
+<rect width="1440" height="1068" transform="translate(-644 -553)" fill="#E7E6CF"/>
+<rect id="application box" x="-138" y="-395" width="425" height="514" fill="#A8C256" fill-opacity="0.32"/>
+<g id="Group 46">
+<path id="Vector" d="M12.2859 5.2965H15V1.10989C13.6859 0.985278 12.3655 0.923754 11.0443 0.925576C7.11742 0.925576 4.43215 3.11104 4.43215 7.11333V10.5627H0V15.2496H4.43215V27.2564H9.74495V15.2496H14.1627L14.8268 10.5627H9.74495V7.57412C9.74495 6.19175 10.1492 5.2965 12.2859 5.2965Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_191_2470">
+<rect width="1440" height="1068" fill="white" transform="translate(-644 -553)"/>
+</clipPath>
+</defs>
+</svg>

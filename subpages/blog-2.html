@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/blogs.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Unlocking Literacy</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <div class="flex-header">
+          <div class="blog-image">
+            <img src="/Images/educational2.png" alt="Blog image" />
+          </div>
+          <h1 class="event-title">
+            Unlocking Literacy: Strategies for Early Readers
+          </h1>
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <p>
+              <br />
+              <br />
+              In the early stages of a child's educational journey, the
+              foundation of literacy is laid, and it's a pivotal phase that sets
+              the course for a lifelong love of reading. 'Unlocking Literacy:
+              Strategies for Early Readers' delves deep into the techniques and
+              practices that empower young learners to become confident and
+              enthusiastic readers.
+
+              <br />
+              <br />
+              The blog not only outlines the importance of early literacy but
+              also provides a rich tapestry of practical strategies that
+              parents, caregivers, and educators can seamlessly integrate into a
+              child's daily routine. From interactive read-aloud sessions that
+              foster a love for stories to phonics activities that form the
+              building blocks of language comprehension, every aspect of early
+              literacy development is explored.
+
+              <br />
+              <br />
+              Moreover, the blog emphasizes the significance of creating a
+              literacy-rich environment both at home and in educational
+              settings. It offers valuable insights into curating diverse and
+              engaging reading materials that cater to a child's unique
+              interests and preferences. By surrounding children with a wide
+              array of books and resources, we ignite their curiosity and open
+              the doors to a world of imagination and knowledge.
+
+              <br />
+              <br />
+              Furthermore, 'Unlocking Literacy' goes beyond the basics,
+              addressing the diverse needs of early readers. It provides
+              guidance on recognizing and supporting children with varying
+              learning styles, ensuring that every child receives the tailored
+              attention they deserve. Whether it's through multisensory
+              approaches or personalized reading plans, the blog offers a
+              comprehensive toolkit for nurturing literacy skills in all
+              children.
+
+              <br />
+              <br />
+              By empowering parents, caregivers, and educators with proven
+              strategies and a wealth of resources, this blog aims to create a
+              strong foundation for early readers, enabling them to embark on a
+              lifelong journey of exploration, imagination, and discovery
+              through the magic of books. In essence, 'Unlocking Literacy:
+              Strategies for Early Readers' is a beacon of guidance for those
+              committed to shaping the literacy landscape for young learners.
+              Together, let's cultivate a generation of avid readers, armed with
+              the power of words and the joy of storytelling.
+
+              <br />
+              <br />
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

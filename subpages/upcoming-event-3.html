@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/events.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Art Auction for Impact</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <div id="event-details-container">
+        <!-- Our story section -->
+        <div class="upcoming-event-image">
+          <img src="/Images/upcoming event 3.png" alt="Event image" />
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <h1 class="event-title">Art Auction for Impact</h1>
+            <p>
+              Immerse yourself in the world of creativity and compassion at our
+              "Art Auction for Impact." This extraordinary event invites you to
+              explore and bid on exquisite artworks generously donated by local
+              artists, all in support of a cause that touches young lives.
+
+              <br />
+              <br />
+              On <span class="date">23rd December 2023,</span> the venue will be
+              transformed into an art haven where beauty meets benevolence. As
+              you step into the enchanting atmosphere of
+              <span class="date">Britannia & Tenth line, </span>you'll discover
+              a curated collection that goes beyond aesthetics – each piece is a
+              brushstroke of hope for children in need.
+
+              <br />
+              <br />
+              The auction promises an evening of discovery and generosity.
+              Attendees will have the opportunity to bid on captivating
+              artworks, knowing that every winning bid contributes directly to
+              providing support and educational resources for underprivileged
+              children. It's not just an art auction; it's a collective effort
+              to create a brighter future through the power of creativity.
+
+              <br />
+              <br />
+              As the bidding unfolds, the venue will be filled with the
+              excitement of friendly competition and the joy of giving. Whether
+              you're a seasoned art enthusiast or a first-time bidder, your
+              participation makes a difference.
+
+              <br />
+              <br />
+              Join us for an unforgettable night where art becomes a catalyst
+              for change. Bid generously, support the cause, and witness the
+              transformative impact of your contribution. As the gavel falls,
+              you'll not only take home a beautiful piece of art but also carry
+              the satisfaction of knowing you've played a vital role in shaping
+              the future of deserving children.
+
+              <br />
+              <br />
+              <span class="date">
+                Save the date - 23rd December 2023, Britannia & Tenth line.
+              </span>
+              Let art be the medium through which we paint a better tomorrow.
+              Your presence and bids will echo with meaning, leaving an
+              indelible mark on the lives of those who need it most.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

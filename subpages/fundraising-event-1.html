@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/events.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Education Workshop</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <div class="event-image">
+          <img src="/Images/fundraising1.png" alt="Event image" />
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <h1 class="event-title">Legacy of Learning Gala</h1>
+            <p>
+              Our elegant evening of dining, dancing, and giving was a
+              resounding success, thanks to your generous support. Together, we
+              illuminated the path to a brighter future for underprivileged
+              children. As the golden hues of the sunset painted the horizon,
+              our esteemed guests gathered, their hearts brimming with a shared
+              purpose – to bridge the educational gap and nurture young minds.
+
+              <br />
+              <br />
+              The ballroom, adorned with cascading fairy lights and blooming
+              florals, became a haven of camaraderie and compassion. Laughter
+              echoed as guests mingled, sharing stories of hope and envisioning
+              a world where every child has access to quality education.
+
+              <br />
+              <br />
+              The night unfolded in a symphony of delightful flavors, each
+              course a testament to the power of community. From the first bite
+              to the last, the culinary journey was a reminder that together, we
+              can create lasting change.
+
+              <br />
+              <br />
+              As the dance floor came alive, so did the spirit of giving. Each
+              twirl and step was a promise to provide educational toys that
+              would ignite sparks of curiosity in young hearts. The music and
+              laughter were a celebration of the collective impact we were
+              making.
+
+              <br />
+              <br />
+              Throughout the evening, stories were shared – stories of triumph,
+              resilience, and dreams taking flight. These narratives were a
+              testament to the legacy we were building, one that would echo in
+              the hearts of children for years to come.
+
+              <br />
+              <br />
+              The Legacy of Learning Gala was not just an event; it was a moment
+              etched in time, a testament to the boundless potential of unity
+              and compassion. With heartfelt gratitude, we extend our thanks to
+              each guest, sponsor, and supporter who made this night a beacon of
+              hope.
+
+              <br />
+              <br />
+              Together, we've taken a giant stride towards a future where every
+              child's potential is nurtured, every dream is encouraged, and
+              every mind is ignited with the fire of learning. The legacy
+              continues, and we march forward, hand in hand, towards a world of
+              endless possibilities.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

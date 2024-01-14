@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/navigationpages/styles/DonateToys.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Donate Toys</title>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <img class="top-image" src="/Images/donatetoys1.png" alt="charityimage" />
+
+      <!-- Donate Toys section -->
+      <section class="DonateToys">
+        <div class="DonateToys-container">
+          <h1>Toy Donation Guidelines</h1>
+          <p class="quote">“Unlocking Learning, One Toy at a Time”</p>
+          <p class="description">
+            We greatly appreciate your interest in contributing to our cause by
+            donating educational toys. Your generosity plays a pivotal role in
+            brightening the educational journey of underprivileged children. To
+            ensure that each toy makes a meaningful impact, we kindly request
+            that you adhere to the following guidelines:
+          </p>
+          <ol class="description">
+            <li>
+              <strong>Types of Toys:</strong> We focus on educational toys that
+              encourage learning through play. This may include puzzles,
+              building blocks, interactive games, art supplies, and
+              age-appropriate books.
+            </li>
+            <li>
+              <strong>Age-Appropriateness:</strong> Please consider the age
+              group of the children we serve. Toys suitable for ages 3 to 12 are
+              highly encouraged.
+            </li>
+            <li>
+              <strong>Quality Assurance:</strong> We value the durability and
+              safety of toys. Kindly ensure that donated toys are in good
+              condition, with all parts intact and free from any safety hazards.
+            </li>
+            <li>
+              <strong>Packaging and Shipping:</strong> If you're mailing toys,
+              secure packaging is essential to prevent any damage during
+              transit. Please include a note with your contact information for
+              our gratitude.
+            </li>
+          </ol>
+          <button class="learnMore" onclick="scrollToLocations()">
+            Learn More
+          </button>
+
+          <script>
+            function scrollToLocations() {
+              const locationsSection =
+                document.getElementById("Dropoff-Locations");
+              const headerHeight =
+                document.querySelector(".header").offsetHeight;
+
+              if (locationsSection) {
+                const scrollToPosition =
+                  locationsSection.offsetTop - headerHeight;
+                window.scrollTo({
+                  top: scrollToPosition,
+                  behavior: "smooth",
+                });
+              }
+            }
+          </script>
+        </div>
+      </section>
+
+      <!-- Donate Toys section -->
+      <section id="Dropoff-Locations" class="location">
+        <div class="location-container">
+          <h1>Toy Donation Guidelines</h1>
+          <p class="description">
+            If you prefer to drop off your donated toys in person, we have
+            established convenient locations for your convenience. Feel free to
+            visit any of the following places during their operating hours:
+          </p>
+          <h3 class="location-heading">Drop-off Location 1</h3>
+          <ul class="description">
+            <li>
+              <strong>Name:</strong> Sunshine Community Center <br />
+              <a
+                href="https://www.google.com/maps?q=123+Main+Street%2C+Anytown%2C+USA"
+                target="_blank"
+              >
+                (View on Google Maps)
+              </a>
+            </li>
+            <li><strong>Address:</strong> 123 Main Street, Anytown, USA</li>
+            <li>
+              <strong>Operating Hours:</strong> Monday to Friday, 9:00 AM to
+              5:00 PM
+            </li>
+          </ul>
+
+          <h3 class="location-heading">Drop-off Location 2</h3>
+          <ul class="description">
+            <li><strong>Name:</strong> Harmony Library</li>
+            <li>
+              <strong>Address:</strong> 456 Elm Avenue, Cityville, USA <br />
+              <a
+                href="https://www.google.com/maps?q=456+Elm+Avenue%2C+Cityville%2C+USA"
+                target="_blank"
+              >
+                (View on Google Maps)
+              </a>
+            </li>
+            <li>
+              <strong>Operating Hours:</strong> Tuesday and Thursday, 10:00 AM
+              to 7:00 PM; Saturday, 10:00 AM to 2:00 PM
+            </li>
+          </ul>
+
+          <h3 class="location-heading">Drop-off Location 3</h3>
+          <ul class="description lastlocation">
+            <li><strong>Name:</strong> Hopeful Learning Center</li>
+            <li>
+              <strong>Address:</strong> 789 Oak Drive, Townsville, USA <br />
+              <a
+                href="https://www.google.com/maps?q=789+Oak+Drive%2C+Townsville%2C+USA"
+                target="_blank"
+              >
+                (View on Google Maps)
+              </a>
+            </li>
+            <li>
+              <strong>Operating Hours:</strong> Monday, Wednesday, and Friday,
+              8:30 AM to 6:00 PM
+            </li>
+          </ul>
+        </div>
+      </section>
+      <img class="teddy-image" src="/Images/donatetoys2.png" alt="teddyimage" />
+
+      <!-- donation form section -->
+      <section id="donation-form">
+        <div class="donation-container">
+          <h1>Online Donation</h1>
+          <p class="subheading">Fill the form to Donate online!</p>
+          <form>
+            <div class="form-row">
+              <div class="form-column">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-column">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-column">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="abc@gmail.com"
+                />
+              </div>
+              <div class="form-column">
+                <label for="contact-number">Contact Number</label>
+                <input
+                  type="tel"
+                  id="contact-number"
+                  name="contact-number"
+                  placeholder="+ (Country code)"
+                  pattern="^\+(?:[0-9] ?){6,14}[0-9]$"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-column">
+                <label for="card-number">Card Number</label>
+                <input
+                  type="text"
+                  id="card-number"
+                  name="card-number"
+                  placeholder="0000 0000 0000 0000"
+                  pattern="[0-9]+"
+                  oninput="formatCardNumber(this)"
+                  onkeypress="validateNumericInput(event)"
+                  required
+                />
+              </div>
+              <div class="form-column">
+                <div class="expiry-cvc">
+                  <div class="expiry">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input
+                      type="text"
+                      id="expiry-date"
+                      name="expiry-date"
+                      placeholder="mm/yyyy"
+                      pattern="[0-9]+"
+                      oninput="formatExpiryDate(this)"
+                      onkeypress="validateNumericInput(event)"
+                      required
+                    />
+                  </div>
+                  <div class="cvc">
+                    <label for="cvc">CVC</label>
+                    <input
+                      type="text"
+                      id="cvc"
+                      name="cvc"
+                      placeholder="000"
+                      pattern="[0-9]+"
+                      onkeypress="validateCVCInput(event)"
+                      style="width: 60%"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit</button>
+          </form>
+        </div>
+      </section>
+      <script>
+        function formatCardNumber(input) {
+          // Remove non-numeric characters from the input
+          const cardNumber = input.value.replace(/\D/g, "");
+
+          // Limit the card number to 16 digits
+          const formattedCardNumber = cardNumber.slice(0, 16);
+
+          // Format the card number with spaces
+          const spacedCardNumber = formattedCardNumber
+            .replace(/(\d{4})/g, "$1 ")
+            .trim();
+
+          // Set the formatted value back to the input
+          input.value = spacedCardNumber;
+        }
+
+        function validateNumericInput(event) {
+          // Allow only numeric input
+          const inputChar = String.fromCharCode(event.charCode);
+          if (!/^\d+$/.test(inputChar)) {
+            event.preventDefault();
+          }
+        }
+        function validateCVCInput(event) {
+          // Allow only numeric input for CVC
+          const inputChar = String.fromCharCode(event.charCode);
+          if (!/^\d+$/.test(inputChar)) {
+            event.preventDefault();
+          }
+        }
+
+        function formatCVC(input) {
+          // Allow only numbers
+          const cvc = input.value.replace(/\D/g, "").substring(0, 3);
+          input.value = cvc;
+        }
+
+        document.getElementById("cvc").addEventListener("input", function () {
+          formatCVC(this);
+        });
+        function formatExpiryDate(input) {
+          // Format as mm/yyyy
+          const expiryDate = input.value.replace(/\D/g, "").substring(0, 6);
+          if (expiryDate.length >= 2) {
+            input.value = expiryDate
+              .replace(/(\d{2})(\d{0,4})/, "$1/$2")
+              .trim();
+          } else {
+            input.value = expiryDate;
+          }
+        }
+
+        // Trigger formatting while typing
+        document
+          .getElementById("card-number")
+          .addEventListener("input", function () {
+            formatCardNumber(this);
+          });
+
+        document
+          .getElementById("expiry-date")
+          .addEventListener("input", function () {
+            formatExpiryDate(this);
+          });
+      </script>
+    </main>
+    <!-- script for footer content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

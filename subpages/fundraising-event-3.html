@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/events.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Art Auction for Impact</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <div class="event-image">
+          <img src="/Images/fundraising3.png" alt="Event image" />
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <h1 class="event-title">Educational Workshops</h1>
+            <p>
+              Our series of online workshops served as a dynamic platform for
+              growth and learning, thanks to your enthusiastic participation.
+              Your invaluable contributions played a pivotal role in making
+              these sessions not just informative but transformative for all
+              involved.
+
+              <br /><br />
+              Throughout the series, participants like you embraced a journey of
+              continuous learning, engaging in thought-provoking discussions and
+              gaining insights that will undoubtedly shape their approach to
+              education. Your active involvement highlighted the commitment to
+              fostering a community of educators and learners dedicated to
+              making a positive impact.
+
+              <br /><br />
+              The virtual space became a hub of collaboration and shared
+              knowledge, where ideas flowed freely, and diverse perspectives
+              enriched the learning experience. Your willingness to engage in
+              dialogue and share your expertise created an environment where
+              everyone felt heard and valued.
+
+              <br /><br />
+              These workshops were not just about acquiring new skills; they
+              were about building a network of individuals passionate about
+              educational excellence. As the sessions unfolded, it became
+              evident that the collective knowledge and dedication of
+              participants like you are instrumental in driving positive change
+              in the realm of education.
+
+              <br /><br />
+              With deep gratitude, we extend our thanks for your unwavering
+              commitment to the cause of empowering minds through education.
+              Your participation in our education workshops has contributed to
+              creating a ripple effect, reaching far beyond the virtual space
+              and into the lives of those who will benefit from enhanced
+              learning experiences.
+
+              <br /><br />
+              As we reflect on the success of these workshops, we are reminded
+              that the journey of education is a shared one. Your active
+              involvement has not only added value to your own professional
+              development but has also enriched the educational landscape for
+              countless learners. Together, we continue to pave the way for a
+              brighter and more inclusive future through the power of education.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Load the footer content
+      fetch("/header_footer/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector("body").insertAdjacentHTML("beforeend", data);
+        });
+    });
+  </script>
+</html>

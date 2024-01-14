@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/navigationpages/styles/GetInvolved.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Get Involved</title>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <img class="top-image" src="/Images/getinvolved.png" alt="charityimage" />
+      <!-- ***************************** Fundraising Section *********************************** -->
+
+      <section id="spotlight">
+        <h1>Fundraising Events</h1>
+        <div class="flex-fundraising-event">
+          <!-- ***************************** Fundraising Event 1  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="Legacy of learning gala event picture"
+                src="/Images/fundraising1.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">Legacy of Learning Gala</p>
+
+              <p class="description">
+                Our elegant evening of dining, dancing, and giving was a
+                resounding success, thanks to your generous support...
+              </p>
+              <button
+                class="learnMore"
+                id="event-1"
+                data-file="/subpages/fundraising-event-1.html"
+              >
+                Learn More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** Fundraising Event 2  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt=" Family Fun Event picture"
+                src="/Images/fundraising2.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">Family Fun Extravaganza</p>
+              <p class="description">
+                Our family fun day was a roaring success, filled with laughter,
+                games, and shared purpose. Thanks to your participation...
+              </p>
+
+              <button
+                class="learnMore"
+                id="event-2"
+                data-file="/subpages/fundraising-event-2.html"
+              >
+                Learn More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** Fundraising Event 3  *********************************** -->
+          <article class="spotlight-item last-item">
+            <div class="image-container">
+              <img
+                alt="Education Workshop picture"
+                src="/Images/fundraising3.png"
+              />
+            </div>
+
+            <div class="content">
+              <p class="main-header">Educational Workshops</p>
+              <p class="description">
+                Our online workshops were a platform for growth and learning,
+                made possible by your participation. Your Contributions...
+              </p>
+              <button
+                class="learnMore"
+                id="event-3"
+                data-file="/subpages/fundraising-event-3.html"
+              >
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- upcoming event section -->
+      <section id="spotlight">
+        <h1>Upcoming Events</h1>
+        <div class="upcoming-event">
+          <!-- ***************************** Upcoming event  1  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="Toy Drive Gala Poster"
+                src="/Images/upcoming event 1.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">Toy Drive Gala</p>
+
+              <p class="description">
+                Our elegant evening of dining, dancing, and giving was a
+                resounding success, thanks to your generous support...
+              </p>
+              <button
+                class="learnMore"
+                id="event-4"
+                data-file="/subpages/upcoming-event-1.html"
+              >
+                Learn More
+              </button>
+            </div>
+          </article>
+          <!-- *****************************Upcoming event  2  *********************************** -->
+          <article class="spotlight-item">
+            <div class="image-container">
+              <img
+                alt="Walk for Education event poster"
+                src="/Images/upcoming event 2.png"
+              />
+            </div>
+            <div class="content">
+              <p class="main-header">Walk for Education</p>
+              <p class="description">
+                Our family fun day was a roaring success, filled with laughter,
+                games, and shared purpose. Thanks to your participation...
+              </p>
+              <button
+                class="learnMore"
+                id="event-5"
+                data-file="/subpages/upcoming-event-2.html"
+              >
+                learn More
+              </button>
+            </div>
+          </article>
+          <!-- ***************************** Upcoming event  3  *********************************** -->
+          <article class="spotlight-item last-item">
+            <div class="image-container">
+              <img
+                alt=" Art Auction event poster"
+                src="/Images/upcoming event 3.png"
+              />
+            </div>
+
+            <div class="content">
+              <p class="main-header">Art Auction for Impact</p>
+              <p class="description">
+                Our online workshops were a platform for growth and learning,
+                made possible by your participation. Your Contributions...
+              </p>
+              <button
+                class="learnMore"
+                id="event-6"
+                data-file="/subpages/upcoming-event-3.html"
+              >
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <img
+        class="volunteer"
+        alt=" Volunteers picture"
+        src="/Images/volunteer.png"
+      />
+
+      <p class="volunteer-line">Want to be part of our Volunteer team?</p>
+
+      <!-- donation form section -->
+      <section id="volunteer-form">
+        <div class="volunteer-container">
+          <h1>Sign Up</h1>
+          <form>
+            <div class="form-row">
+              <div class="form-column">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-column">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-column">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="abc@gmail.com"
+                />
+              </div>
+              <div class="form-column">
+                <label for="contact-number">Contact Number</label>
+                <input
+                  type="tel"
+                  id="contact-number"
+                  name="contact-number"
+                  placeholder="+ (Country code)"
+                  pattern="^\+(?:[0-9] ?){6,14}[0-9]$"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-column">
+                <label for="why-us">Why Us?</label>
+                <textarea
+                  id="why-us"
+                  name="why-us"
+                  rows="4"
+                  required
+                  placeholder="Tell us why you want to be part of our team? (minimum 150 words)"
+                ></textarea>
+              </div>
+            </div>
+            <div id="popup-message"></div>
+            <button type="submit" id="submit-btn" disabled>Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const submitBtn = document.getElementById("submit-btn");
+          const whyUsInput = document.getElementById("why-us");
+          const form = document.querySelector("form");
+          const popupMessage = document.getElementById("popup-message");
+
+          whyUsInput.addEventListener("input", function () {
+            const words = whyUsInput.value.split(/\s+/).length;
+            if (words >= 150) {
+              submitBtn.disabled = false;
+            } else {
+              submitBtn.disabled = true;
+            }
+          });
+
+          submitBtn.addEventListener("click", function () {
+            // Validate form fields
+            const firstName = document.getElementById("first-name").value;
+            const lastName = document.getElementById("last-name").value;
+            const email = document.getElementById("email").value;
+            const contactNumber =
+              document.getElementById("contact-number").value;
+            const whyUs = document.getElementById("why-us").value;
+
+            if (firstName && lastName && email && contactNumber && whyUs) {
+              // Form is valid, show pop-up message
+              popupMessage.textContent =
+                "*We have received your message. We will get back to you via email.";
+              popupMessage.style.color = "black";
+              popupMessage.style.display = "block";
+
+              form.reset();
+            } else {
+              // Form is incomplete, show error message
+              popupMessage.textContent = "Please fill in all fields.";
+              popupMessage.style.color = "red";
+              popupMessage.style.display = "block";
+            }
+          });
+
+          // Function to hide the pop-up message after a few seconds
+          function hidePopup() {
+            popupMessage.style.display = "none";
+          }
+
+          function enableSubmitButton() {
+            const whyUs = document.getElementById("why-us").value;
+            const words = whyUs.split(/\s+/).length;
+
+            const isFormValid = words >= 150;
+
+            submitBtn.disabled = !isFormValid;
+
+            // Change button text color based on form validity
+            submitBtn.style.color = isFormValid ? "black" : "#753a3a8c";
+          }
+
+          // Attach input event listeners to form fields
+          const formInputs = document.querySelectorAll(
+            "form input, form textarea"
+          );
+          formInputs.forEach((input) => {
+            input.addEventListener("input", enableSubmitButton);
+          });
+
+          // Initial check and set button text color
+          enableSubmitButton();
+        });
+      </script>
+      <script>
+        // Function to handle button clicks
+        function handleButtonClick(event) {
+          const button = event.target;
+          const filePath = button.getAttribute("data-file");
+
+          // Check if the button has a data-file attribute
+          if (filePath) {
+            // Use window.location to navigate to the specified HTML file
+            window.location.href = filePath;
+          }
+        }
+
+        // Attach the handleButtonClick function to each learnMore button
+        const learnMoreButtons = document.querySelectorAll(".learnMore");
+        learnMoreButtons.forEach((button) => {
+          button.addEventListener("click", handleButtonClick);
+        });
+      </script>
+    </main>
+    <!-- script for footer content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

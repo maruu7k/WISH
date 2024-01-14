@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/events.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Toy Drive Gala</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+    <main>
+      <div id="event-details-container">
+        <!-- Our story section -->
+        <div class="upcoming-event-image">
+          <img src="/Images/upcoming event 1.png" alt="Event image" />
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <h1 class="event-title">Toy Drive Gala</h1>
+            <p>
+              Join us for an elegant evening of dinner, dancing, and giving, all
+              in support of our mission to provide educational toys to
+              underprivileged children. The Toy Drive Gala promises to be a
+              night of glamour and goodwill, where every moment is dedicated to
+              making a meaningful difference.
+
+              <br />
+              <br />
+              As the stars twinkle overhead, we'll gather at the enchanting
+              venue of Mississauga Square One Mall on the 10th of December 2023.
+              The mall's atrium will be transformed into a haven of elegance,
+              where guests will be welcomed by the warm embrace of holiday
+              spirit.
+
+              <br />
+              <br />
+              The evening will commence with a delectable dinner, carefully
+              curated to delight the senses and set the stage for a night of
+              celebration. Savory flavors and sweet indulgences will be
+              accompanied by the joyous hum of conversation, as like-minded
+              individuals come together to support a shared cause.
+
+              <br />
+              <br />
+              As the music fills the air, the dance floor will beckon, inviting
+              guests to waltz and sway to the rhythm of unity. Laughter and
+              camaraderie will flow freely, creating memories that will linger
+              long after the night has come to a close.
+
+              <br />
+              <br />
+              But the true highlight of the evening will be the act of giving
+              itself. Guests will have the opportunity to contribute to our
+              mission, knowing that their generosity will directly impact the
+              lives of children in need. Every donation, whether a toy or a
+              financial contribution, will be a step towards narrowing the
+              educational gap and fostering a love for learning.
+
+              <br />
+              <br />
+              The Toy Drive Gala is not just an event; it's a promise of
+              brighter tomorrows for children who deserve every opportunity to
+              thrive. As the clock strikes midnight, we'll bid farewell, knowing
+              that together, we've ignited a spark of hope in young hearts.
+
+              <br />
+              <br />
+              <span class="date">
+                Save the date - December 10th, 2023, at Mississauga Square One
+                Mall.
+              </span>
+
+              Let's come together and create a legacy of learning, one toy at a
+              time.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

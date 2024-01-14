@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/blogs.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>The Role of Parental Involvement in Education</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the header content
+        fetch("/header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+
+    <main>
+      <div id="event-details-container">
+        <div class="flex-header">
+          <div class="blog-image">
+            <img src="/Images/educational6.png" alt="Blog image" />
+          </div>
+          <h1 class="event-title">
+            The Role of Parental Involvement in Education
+          </h1>
+        </div>
+        <section class="event-details">
+          <div class="details-container">
+            <p>
+              <br />
+              <br />
+              Parental involvement is a cornerstone of a child's educational
+              journey, shaping their attitudes towards learning and their
+              overall academic success. 'The Role of Parental Involvement in
+              Education' delves into the profound impact that engaged parents
+              and caregivers have on a child's educational experience.
+
+              <br />
+              <br />
+              This blog explores the multifaceted ways in which parents can
+              actively participate in their child's learning journey. It
+              provides practical strategies for creating a supportive home
+              environment, where learning is valued, and curiosity is nurtured.
+              From establishing routines to incorporating learning into everyday
+              activities, the blog offers a roadmap for parents to become
+              partners in education.
+
+              <br />
+              <br />
+              Moreover, 'The Role of Parental Involvement' celebrates the unique
+              strengths and perspectives that parents bring to their child's
+              education. It highlights the importance of open communication
+              between parents, teachers, and students, creating a collaborative
+              triad that fosters a holistic approach to learning.
+
+              <br />
+              <br />
+              The blog also emphasizes the significance of parental involvement
+              in shaping a child's attitudes towards school and education. It
+              offers insights into how parents can instill a love for learning,
+              nurture a growth mindset, and provide the encouragement and
+              support needed for academic success. By being actively engaged,
+              parents become champions for their child's education.
+
+              <br />
+              <br />
+              Furthermore, this blog advocates for the recognition of parents as
+              valuable contributors to the educational community. It invites
+              schools and educators to create spaces where parents feel
+              welcomed, valued, and empowered to be advocates for their child.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>

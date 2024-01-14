@@ -1,0 +1,112 @@
+/* ************************ Variables declared ************************* */
+:root {
+  /* font family */
+  --heading: "Montserrat", sans-serif;
+  --description: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #e7e6cf;
+}
+h1 {
+  font-family: var(--heading);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem 0 0rem 0;
+}
+
+p.quote {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+p {
+  font-family: var(--description);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* testimonial styles */
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-content {
+  width: 370px;
+  margin-top: 5rem;
+}
+
+.testimonial img {
+  margin-right: 10px;
+  width: 30%;
+}
+
+.testimonial img.Image-left {
+  margin-left: 15%;
+}
+
+.testimonial img.Image-right {
+  margin-right: 15%;
+}
+
+.content-right {
+  margin-left: 6.5rem;
+}
+
+.content-left {
+  margin-right: 7rem;
+}
+
+.testimonial.reversed {
+  flex-direction: row-reverse;
+}
+
+.testimonial.reversed img {
+  margin-left: 10px;
+}
+
+.testimonial img {
+  margin-top: 4rem;
+}
+.testimonial-section.hidden {
+  display: none;
+}
+button#show-more-btn {
+  margin-left: 15%;
+  margin-bottom: 2.3rem;
+  border-radius: 3px;
+  background-color: rgba(228, 63, 111, 0.9);
+  height: 2.5rem;
+  width: 11%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  border: none;
+}
+button#show-more-btn:hover {
+  background: #e43f6f;
+  cursor: pointer;
+}
+
+.statement {
+  margin-left: 15%;
+  margin-top: 3rem;
+  font-size: 20px;
+  font-family: var(--heading);
+  font-weight: bold;
+  text-align: left;
+}
